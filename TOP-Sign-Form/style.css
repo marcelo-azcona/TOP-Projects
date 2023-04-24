@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.maincontainer {
+  font-size: 1rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.maincontainer,
+.main-logo {
+  display: flex;
+}
+
+.page-left-side {
+  height: auto;
+  width: 40vw;
+  background-image: url(/home/kamei86/the_odin_project/Odin-Project-Sign-Form/img/PCbuild.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-logo {
+  gap: 1.5vw;
+  padding: 20px 0px;
+  font-weight: 900;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25vh;
+}
+
+.pc-logo {
+  height: 10vh;
+  mix-blend-mode: multiply;
+}
+
+.page-right-side {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-text {
+  width: 45vw;
+  font-size: 1.5rem;
+  margin-top: 5vh;
+}
+
+.description-text,
+form,
+.btn-text {
+  padding-left: 4vw;
+}
+
+.down-text {
+  margin-top: 2vh;
+}
+
+.form-title {
+  font-size: 1.5rem;
+}
+
+.form-text {
+  margin-top: 11vh;
+  gap: 20px;
+  width: 50vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form-title {
+  width: 100%;
+}
+
+form {
+  padding-bottom: 10vh;
+  box-shadow: 0 10px 10px -2px rgb(22 22 22);
+}
+
+.input {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+}
+
+input {
+  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(149, 69, 32);
+}
+
+.btn-text {
+  font-size: 1.2rem;
+  height: 100%;
+  padding-top: 3vh;
+}
+
+button {
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #271007;
+  margin-bottom: 3vh;
+}
+
+button:hover {
+  background-color: black;
+  border: 2px solid rgb(149, 69, 32);
+}
+
+.btn-text a {
+  text-decoration: none;
+  color: rgb(149, 69, 32);
+}
+
+/* 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  height: 50px;
+  background: rgb(223, 223, 223);
+  font-size: 15px;
+} */

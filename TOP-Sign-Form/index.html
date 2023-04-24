@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="page-left-side">
+        <div class="main-logo">
+          <img
+            src="/home/kamei86/the_odin_project/Odin-Project-Sign-Form/img/pc-icon-32258.jpg"
+            alt="A PC logo"
+            class="pc-logo"
+          />
+          <h1 class="left-side-title">Learn with us!</h1>
+        </div>
+      </div>
+
+      <div class="page-right-side">
+        <div class="description-text">
+          <p class="up-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams
+          </p>
+          <p class="middle-text">Sign up <em>now</em> to get started.</p>
+          <p class="down-text">You <em>know</em> you want to.</p>
+        </div>
+        <form action="#" id="myform">
+          <div class="form-text">
+            <p class="form-title">Let`s do this!</p>
+            <div class="input">
+              <label for="firstName">FIRST NAME:</label>
+              <input type="text" id="firstName" required />
+            </div>
+            <div class="input" id="my-form">
+              <label for="lastName">LAST NAME:</label>
+              <input type="text" id="lastName" required />
+            </div>
+            <div class="input">
+              <label for="email">EMAIL:</label>
+              <input
+                type="email"
+                id="email"
+                pattern="^[0-9a-zA-Z]+([0-9a-zA-Z]*[-._+])*[0-9a-zA-Z]+@[0-9a-zA-Z]+([-.][0-9a-zA-Z]+)*([0-9a-zA-Z]*[.])[a-zA-Z]{2,6}$"
+                title="The email should be something like odinproject@signupform.com"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="phone">PHONE NUMBER:</label>
+              <input
+                type="text"
+                id="phone"
+                minlength="9"
+                maxlength="9"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="password">PASSWORD:</label>
+              <input type="password" id="password" required />
+            </div>
+            <div class="input">
+              <label for="confirm">CONFIRM PASSWORD:</label>
+              <input type="password" id="confirm" required />
+            </div>
+          </div>
+        </form>
+
+        <div class="btn-text">
+          <button type="submit" form="myform">Create an Account!</button>
+          <p class="log-text">
+            Already have an account? <a href="#">Log in!!</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
