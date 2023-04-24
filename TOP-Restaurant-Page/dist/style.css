@@ -1,0 +1,212 @@
+:root {
+  --font-color: #eee;
+  --font-color-placeholder: rgba(255, 255, 255, 0.7);
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.7);
+  --background-dark2: rgba(0, 0, 0, 0.8);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  flex-direction: column;
+  background-image: url("../dist/img/Pasta-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Italiana", serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2.8rem;
+  color: var(--font-color);
+  background-color: var(--background-dark);
+}
+
+.header > nav {
+  display: flex;
+  margin-top: 1rem;
+  gap: 4rem;
+}
+
+/* MAIN */
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--font-color);
+  line-height: 1.6;
+  background-color: var(--background-dark2);
+}
+
+.main__Home p:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.main__Contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: var(--background-dark2);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.main__Contact p {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+.main__hidden {
+  display: none;
+}
+
+/* CONTACT - SIDE INFO */
+
+.main__side-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main__contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main__form-input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  padding: 0.7rem;
+  border-bottom: 2px solid white;
+  color: var(--font-color);
+
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main__form-input::placeholder {
+  color: var(--font-color-placeholder);
+}
+
+.main__form-btn {
+  background-color: var(--font-color);
+  border: none;
+  border-radius: 10px;
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+/* MENU */
+
+.main__Menu {
+  background-color: var(--background-dark2);
+  padding: 1rem;
+  color: var(--font-color);
+}
+
+.main__menu-item {
+  margin-bottom: 0.7rem;
+  display: flex;
+  gap: 1.5rem;
+  min-width: 450px;
+}
+
+.main__menu-description h3 {
+  border-bottom: 2px dotted var(--font-color-dark);
+}
+
+.main__menu-card {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 75vh;
+}
+
+/* BUTTONS */
+
+.header__Home,
+.header__Menu,
+.header__Contact {
+  font-size: 1.3rem;
+  border: 2px solid transparent;
+  background-color: inherit;
+  color: var(--font-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.header__hidden {
+  border-bottom: none;
+}
+
+/* FOOTER */
+
+.footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: var(--background-dark);
+}
+
+/* IMG */
+
+.main__chefImg {
+  height: 25rem;
+}
+
+.main__menuImg {
+  border-radius: 50%;
+  height: 6rem;
+}
